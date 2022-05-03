@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Allias</string>
+    <string name="get_ready_to">Get ready to</string>
+    <string name="guess_the_word">guess the word!</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="the_word_is">The word is...</string>
+    <string name="skip">Skip</string>
+    <string name="got_it">Got it!</string>
+    <string name="your_score">Your score</string>
+    <string name="play_again">Play again</string>
+    <string name="total_score">Total score</string>
+    <string name="your_results_for_previous_games">Your results for previous games:</string>
+    <string name="history">History</string>
+    <string name="clear">Clear</string>
+</resources>
