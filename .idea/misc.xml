@@ -3,15 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/background_color.xml" value="0.192" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/background_color_button.xml" value="0.192" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/ic_arrow.xml" value="0.192" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.2095" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/ic_title_image_group.xml" value="0.192" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/ic_woman_in_red.xml" value="0.192" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/ic_women_in_orange.xml" value="0.192" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/shape_bookmark.xml" value="0.176" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/drawable/stroke_for_spinner.xml" value="0.192" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/final_fragment.xml" value="0.176" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/game_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/list_item_score.xml" value="0.264" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/score_fragment.xml" value="0.264" />
         <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/spinner.xml" value="0.20854700854700856" />
-        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/title_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/spinner_item.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/spinner_item_without_arrow.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/vika1/AndroidStudioProjects/Allias/app/src/main/res/layout/title_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/vika1/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/vika1/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.20854700854700856" />
       </map>
     </option>
   </component>

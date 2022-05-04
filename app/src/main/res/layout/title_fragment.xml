@@ -13,55 +13,74 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color">
 
         <TextView
             android:id="@+id/title_text_get_ready"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
-            android:fontFamily="@font/roboto"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/noto_sans"
             android:gravity="center"
-            android:text="@string/get_ready_to"
+            android:text="@string/your_word_is"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
-            android:id="@+id/title_text_guess_word"
+            android:id="@+id/title_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:fontFamily="@font/roboto"
+            android:fontFamily="@font/oleo_script"
             android:gravity="center"
-            android:text="@string/guess_the_word"
+            android:text="Allias"
             android:textColor="@color/black"
-            android:textSize="32sp"
+            android:textSize="50sp"
             app:layout_constraintTop_toBottomOf="@+id/title_text_get_ready" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/women_in_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/ic_title_image_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text" />
 
         <Spinner
             android:id="@+id/spin_lang"
-            android:layout_width="240dp"
+            android:layout_width="210dp"
             android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:paddingLeft="8dp"
+            android:layout_marginBottom="66dp"
+            android:background="@drawable/stroke_for_spinner"
             android:popupBackground="@android:color/white"
             android:scrollbars="none"
             android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@id/title_button_go"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_text_guess_word"
             tools:ignore="MissingConstraints" />
 
-        <com.google.android.material.button.MaterialButton
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/title_button_go"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_marginBottom="32dp"
-            android:backgroundTint="@color/dark_pink"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/background_color_button"
             android:enabled="@{viewModel.letsGoButtonVisible}"
-            android:text="@string/let_s_go"
-            android:textSize="16sp"
+            android:fontFamily="@font/noto_sans"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:cornerRadius="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -12,4 +12,6 @@
     <string name="your_results_for_previous_games">Your results for previous games:</string>
     <string name="history">History</string>
     <string name="clear">Clear</string>
+    <string name="your_word_is">Your word is...</string>
+    <string name="start">Start</string>
 </resources>

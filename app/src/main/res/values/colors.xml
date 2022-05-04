@@ -8,6 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="dark_pink">#560027</color>
-    <color name="red">#d50000</color>
+    <color name="red">#E44500</color>
     <color name="green">#00c853</color>
+    <color name="light_orange">#FFD693</color>
+    <color name="dark_orange">#B76918</color>
+    <color name="orange">#DA8433</color>
+    <color name="orange_stroke">#F18B11</color>
+
 </resources>

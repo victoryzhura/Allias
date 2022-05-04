@@ -2,18 +2,21 @@ package com.example.allias.ui.fragment.title
 
 
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.allias.ui.ActivityViewModel
 import com.example.allias.App
+import com.example.allias.R
 import com.example.allias.data.retrofit.WordListLang
 import com.example.allias.databinding.TitleFragmentBinding
+import com.example.allias.ui.ActivityViewModel
 import java.util.*
 
 
@@ -41,19 +44,32 @@ class TitleFragment : Fragment() {
         }
 
         val langArray =
-            WordListLang.values().map { Locale.forLanguageTag(it.value).displayLanguage }
+            WordListLang.values()
+                .map { Locale.forLanguageTag(it.value).displayLanguage.replaceFirstChar { it.uppercase() } }
 
         val adapter: ArrayAdapter<String> = ArrayAdapter<String>(
             requireContext(),
-            android.R.layout.simple_spinner_item, langArray
+            R.layout.spinner_item, langArray
         )
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter.setDropDownViewResource(R.layout.spinner_item_without_arrow)
         binding.spinLang.adapter = adapter
 
         val lastPosition = App.pref.getInt("position", 0)
         binding.spinLang.setSelection(lastPosition)
 
         binding.spinLang.onItemSelectedListener = viewModelActivity.itemSelectedObject
+
+        val redSpannable = SpannableString("Allias")
+        redSpannable.setSpan(
+            ForegroundColorSpan(
+                ResourcesCompat.getColor(
+                    resources,
+                    R.color.red,
+                    null
+                )
+            ), 0, 1, 2
+        )
+        binding.titleText.text = redSpannable
     }
 }
