@@ -26,7 +26,7 @@ class GameViewModel : ViewModel() {
     var oneListOfWords = MutableLiveData<List<String>>()
 
     private val time: CountDownTimer
-        get() = object : CountDownTimer(60000, 1000) {
+        get() = object : CountDownTimer(3000, 1000) {
 
             override fun onTick(millisUntilFinished: Long) {
                 _timer.value = (millisUntilFinished).millsToDateFormat()

@@ -11,14 +11,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color">
 
         <TextView
             android:id="@+id/score_text_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/roboto"
+            android:fontFamily="@font/noto_sans"
             android:gravity="center"
             android:text="@string/history"
             android:textColor="@color/black"
@@ -39,17 +40,22 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <Button
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/clear_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:background="@color/purple_200"
+            android:background="@drawable/ic_start_button"
+            android:backgroundTint="@color/blue"
+            android:elevation="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center"
+            android:onClick="@{()->scoreViewModel.onClear()}"
             android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:onClick="@{()->scoreViewModel.onClear()}"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -9,10 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_pink">#560027</color>
     <color name="red">#E44500</color>
-    <color name="green">#00c853</color>
+    <color name="green">#75C434</color>
     <color name="light_orange">#FFD693</color>
     <color name="dark_orange">#B76918</color>
     <color name="orange">#DA8433</color>
     <color name="orange_stroke">#F18B11</color>
+    <color name="orange_button">#FF8E22</color>
+    <color name="orange_for_spinner">#FFE4BA</color>
+    <color name="orange_for_status_bar">#FFC759</color>
+    <color name="orange_skip">#FF3232</color>
+    <color name="blue">#305AC8</color>
 
 </resources>
